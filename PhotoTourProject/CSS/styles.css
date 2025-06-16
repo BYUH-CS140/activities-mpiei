@@ -1,0 +1,65 @@
+/* CSS/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header, footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #006699;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 8px;
+}
+
+.custom-bullets li {
+    list-style-image: url("../images/bullet.png");
+    margin-left: 20px;
+    padding-left: 5px;
+}
