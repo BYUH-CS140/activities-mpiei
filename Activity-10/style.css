@@ -1,25 +1,38 @@
-body {
-    background-color: forestgreen;
+/* 1. Global reset */
+* {
     margin: 0;
-    font-family: "Gill Sans", sans-serif;
+    padding: 0;
+    box-sizing: border-box;
   }
   
+  /* 2. Body styling */
+  body {
+    background-color: forestgreen;
+    font-family: 'Protest Riot', sans-serif;
+  }
+  
+  /* 3. Header */
   header {
     background-color: gold;
     color: #004d00;
     text-align: center;
     font-size: 2em;
     padding: 20px;
-    margin: 0;
   }
   
+  /* 4. Navbar */
   nav {
     background-color: #2e1a1a;
     width: 100%;
-    margin: 0;
     padding: 0 5px;
     position: sticky;
     top: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
   }
   
   nav li {
@@ -29,12 +42,6 @@ body {
   
   nav li:last-child {
     border-right: none;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: inline-flex;
-    align-items: center;
   }
   
   nav a {
@@ -49,28 +56,30 @@ body {
     color: #2e1a1a;
   }
   
+  /* 5. Main layout */
   main {
     background-color: lightgreen;
     margin: 50px 100px;
     padding: 50px;
   }
   
-  .garden {
+  /* 6. Garden image */
+  #garden {
     border: 5px solid brown;
     border-radius: 30px;
     box-shadow: 5px 5px 15px grey;
-    height: 30px;
+    height: 300px;
     width: 30%;
-  }
-  
-  section {
     margin-top: 30px;
   }
   
+  /* 7. Section headers */
   h2 {
     color: brown;
+    margin-top: 30px;
   }
   
+  /* 8. Footer */
   footer {
     background-color: #2e1a1a;
     opacity: 0.9;
