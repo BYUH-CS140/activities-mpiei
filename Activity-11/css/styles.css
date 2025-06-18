@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header */
+  header {
+    background-color: #004d99;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Flexbox Two-Column Layout */
+  .flex-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    background-color: #e8f0fe;
+    border-radius: 8px;
+  }
+  
+  /* Floated Image */
+  .float-section {
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .float-img {
+    float: left;
+    margin-right: 15px;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
