@@ -1,4 +1,6 @@
 /* CSS/styles.css */
+
+/* Base Styles - Mobile First */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,31 +14,32 @@ header, footer {
     background-color: #003366;
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 1em;
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
     background-color: #006699;
-    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #004466;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    display: block;
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 20px;
-    margin: 15px;
+    margin: 10px;
     border-radius: 8px;
 }
 
@@ -62,4 +65,53 @@ figcaption {
     list-style-image: url("../images/bullet.png");
     margin-left: 20px;
     padding-left: 5px;
+}
+
+/* Tablet Styles */
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        border-bottom: none;
+        border-right: 1px solid #004466;
+        padding: 10px 20px;
+    }
+
+    nav ul li:last-child {
+        border-right: none;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    figure {
+        margin: 0;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 900px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 40px;
+    }
+
+    nav ul li {
+        font-size: 1.1em;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    header, footer {
+        font-size: 1.2em;
+    }
 }
