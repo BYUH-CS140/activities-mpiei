@@ -1,0 +1,88 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 1rem;
+    background: #fff7e6;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ff6f61;
+  }
+  
+  /* Form container */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Mobile: labels above inputs, inputs full width */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #72d6c9;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background-color: #e35c4f;
+  }
+  
+  #formMessage {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Desktop: labels left of inputs */
+  @media (min-width: 700px) {
+    .form-group {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    label {
+      width: 35%;
+      margin-bottom: 0;
+    }
+  
+    input {
+      width: 65%;
+    }
+  
+    button {
+      width: auto;
+      padding: 0.7rem 2rem;
+    }
+  }
+  
