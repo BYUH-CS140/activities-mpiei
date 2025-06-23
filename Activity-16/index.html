@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Color Palette App</title>
-  <link rel="stylesheet" href="CSS/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Color Palette App</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
 </head>
 <body>
+    <header>
+        <h1>JavaScript Color Palette</h1>
+    </header>
 
-  <h1>Color Palette App</h1>
+    <main>
+        <div id="controls">
+            <input type="color" id="colorPicker" />
+            <button onclick="generateRandomColor()">Generate Random Color</button>
+        </div>
 
-  <div id="displayArea">
-    <span id="colorValue"></span>
-  </div>
+        <div id="displayArea">
+            <span id="colorValue"></span>
+        </div>
+    </main>
 
-  <button id="randomColorBtn">Generate Random Color</button>
-
-  <script src="scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
