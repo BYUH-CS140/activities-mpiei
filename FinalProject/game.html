@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liahona Quiz Game</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="scripts/quiz.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Your Island Stay – StayTonga Quiz</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header><h1>Liahona Quiz Challenge</h1></header>
-  <main>
-    <div id="quiz-container">
-      <p id="question"></p>
-      <div id="choices"></div>
-      <button onclick="nextQuestion()">Next</button>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">StayTonga</div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="top5.html">Top Places</a></li>
+        <li><a href="game.html">Find Your Stay</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        
+       
+      </ul>
+    </nav>
+    
+  </header>
+
+  <!-- Quiz Section -->
+  <section class="accommodation-section">
+    <h2>What Kind of Island Stay Is Right for You?</h2>
+    <div class="quiz-box">
+      <form id="quizForm">
+        <div class="question">
+          <p>1. What's your ideal morning?</p>
+          <label><input type="radio" name="q1" value="homestay" required> Chatting with locals over breakfast</label><br>
+          <label><input type="radio" name="q1" value="guesthouse"> Exploring the town with coffee in hand</label><br>
+          <label><input type="radio" name="q1" value="beach"> Watching waves and feeling the breeze</label>
+        </div>
+
+        <div class="question">
+          <p>2. What’s most important to you?</p>
+          <label><input type="radio" name="q2" value="homestay" required> Cultural connection</label><br>
+          <label><input type="radio" name="q2" value="guesthouse"> Convenience + Wi-Fi</label><br>
+          <label><input type="radio" name="q2" value="beach"> Peace, nature, and sunsets</label>
+        </div>
+
+        <div class="question">
+          <p>3. Choose your ideal evening:</p>
+          <label><input type="radio" name="q3" value="homestay" required> Family dinner with your host</label><br>
+          <label><input type="radio" name="q3" value="guesthouse"> Watching a local performance in town</label><br>
+          <label><input type="radio" name="q3" value="beach"> Stargazing from a hammock</label>
+        </div>
+
+        <button type="submit" class="btn">See My Match</button>
+      </form>
+
+      <div id="result" class="result-box" style="display: none;">
+        <h3>Your Island Stay Match:</h3>
+        <div id="resultContent"></div>
+        <a href="top5.html" class="btn">Explore Top Places</a>
+      </div>
     </div>
-  </main>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 StayTonga | <a href="https://www.tongaholiday.com" target="_blank">Visit Tonga Tourism</a></p>
+  </footer>
+
+  <script src="scripts/game.js"></script>
+  <script src="scripts/menu.js"></script>
+
 </body>
 </html>

@@ -1,22 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feedback Form</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="scripts/form-validation.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback – StayTonga</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header><h1>Send a Note to Liahona!</h1></header>
-  <main>
-    <form id="feedback-form">
-      <label>Name: <input type="text" id="name" required></label>
-      <label>Grade: <input type="text" id="grade" required></label>
-      <label>Favorite Subject: <input type="text" id="subject" required></label>
-      <label>Message: <textarea id="message" required></textarea></label>
-      <button type="submit">Submit</button>
-    </form>
-  </main>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">StayTonga</div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="top5.html">Top Places</a></li>
+        <li><a href="game.html">Find Your Stay</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+       
+        
+      </ul>
+    </nav>
+    
+  </header>
+
+  <!-- Feedback Form Section -->
+  <section class="accommodation-section">
+    <h2>We’d Love Your Feedback!</h2>
+    <div class="form-box">
+      <form id="feedbackForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required />
+
+        <label for="type">Type of Traveler:</label>
+        <select id="type" name="type" required>
+          <option value="">-- Select --</option>
+          <option value="solo">Solo</option>
+          <option value="family">Family</option>
+          <option value="group">Group</option>
+          <option value="student">Student</option>
+        </select>
+
+        <label for="message">Your Feedback:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your experience..." required></textarea>
+
+        <button type="submit" class="btn">Submit Feedback</button>
+      </form>
+
+      <div id="feedbackResult" class="result-box" style="display: none;">
+        <h3>Thank you for your feedback! 💛</h3>
+        <p>We appreciate your thoughts and will use them to improve StayTonga.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 StayTonga | <a href="https://www.tongaholiday.com" target="_blank">Visit Tonga Tourism</a></p>
+  </footer>
+
+  <script src="scripts/feedback.js"></script>
+  <script src="scripts/menu.js"></script>
+
 </body>
 </html>

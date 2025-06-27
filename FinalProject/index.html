@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><center> Welcome to Liahona Life!</center></title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StayTonga – Island Comforts, Cultural Heart</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <!-- Navigation Bar -->
   <header>
-    <h1>Welcome to Liahona Life!</h1>
-    <nav>
-      <ul>
+    <nav class="navbar">
+      <div class="logo">StayTonga</div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="game.html">Quiz Game</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="day.html">A Student's Day</a></li>
+        <li><a href="top5.html">Top Places</a></li>
+        <li><a href="game.html">Find Your Stay</a></li>
         <li><a href="feedback.html">Feedback</a></li>
+        
+        
       </ul>
     </nav>
+    
   </header>
-  <main>
-    <section>
-      <h2>Discover the daily life of a Liahona High School student in Tonga!</h2>
-      <p>Explore, play, and learn what makes our school special. From devotionals to delicious lunches, every day is an adventure!</p>
-    </section>
-    <img src="images/liahona-school.jpg" alt="Liahona High School">
-  </main>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Island Comforts, Cultural Heart</h1>
+      <p>Discover warm stays, local hospitality, and unforgettable Tongan experiences.</p>
+      <a href="game.html" class="btn">Find Your Perfect Stay</a>
+    </div>
+  </section>
+
+  <!-- Featured Accommodation Cards -->
+  <section class="accommodation-section">
+    <h2>Explore Our Featured Stays</h2>
+    <div class="grid-container">
+      <div class="card">
+        <img src="images/Traditional Homestay.jpg" alt="Traditional Homestay">
+        <h3>Traditional Homestay</h3>
+        <p>Experience authentic Tongan culture with local families.</p>
+      </div>
+      <div class="card">
+        <img src="images/Local.jpg" alt="Guesthouse">
+        <h3>Island Guesthouse</h3>
+        <p>Comfort and community just minutes from the capital.</p>
+      </div>
+      <div class="card">
+        <img src="images/Lodge.jpg" alt="Beach Lodge">
+        <h3>Eco Beach Lodge</h3>
+        <p>Sleep to the sound of waves at our eco-conscious lodges.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 StayTonga | <a href="https://www.tongaholiday.com" target="_blank">Visit Tonga Tourism</a></p>
+  </footer>
+  <script src="scripts/menu.js"></script>
+
 </body>
 </html>
